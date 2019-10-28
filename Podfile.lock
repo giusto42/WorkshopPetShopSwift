@@ -1,3 +1,24 @@
-PODFILE CHECKSUM: 5f939b8cea1876bf7a74f2543fed3c7449d19263
+PODS:
+  - SDWebImage (4.4.7):
+    - SDWebImage/Core (= 4.4.7)
+  - SDWebImage/Core (4.4.7)
+  - SQLite.swift (0.12.2):
+    - SQLite.swift/standard (= 0.12.2)
+  - SQLite.swift/standard (0.12.2)
+
+DEPENDENCIES:
+  - SDWebImage (~> 4.0)
+  - SQLite.swift (~> 0.12.0)
+
+SPEC REPOS:
+  trunk:
+    - SDWebImage
+    - SQLite.swift
+
+SPEC CHECKSUMS:
+  SDWebImage: c10d14a8883ebd89664f02a422006f66a85c0c5d
+  SQLite.swift: d2b4642190917051ce6bd1d49aab565fe794eea3
+
+PODFILE CHECKSUM: bca43b658cffe609e069994f0eeb111ba7f2cdeb
 
 COCOAPODS: 1.8.4

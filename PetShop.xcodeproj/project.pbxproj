@@ -3,16 +3,26 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		23882A70FD0BBE3CB1BA74A2 /* Pods_PetShop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA61F8747212EDFD009C2264 /* Pods_PetShop.framework */; };
+		735DF0E623673A430071238C /* PetShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735DF0E523673A430071238C /* PetShopViewController.swift */; };
+		735DF0E823673AC10071238C /* AddPetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735DF0E723673AC10071238C /* AddPetViewController.swift */; };
+		735DF0EA23673ACE0071238C /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735DF0E923673ACE0071238C /* GalleryViewController.swift */; };
+		735DF0EC23673ADF0071238C /* PetListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735DF0EB23673ADF0071238C /* PetListViewController.swift */; };
+		735DF0F123674D360071238C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 735DF0F023674D360071238C /* Assets.xcassets */; };
+		735DF0F523674E900071238C /* PetCollectionVIewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735DF0F323674E900071238C /* PetCollectionVIewCell.swift */; };
+		735DF0F623674E900071238C /* PetCollectionVIewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 735DF0F423674E900071238C /* PetCollectionVIewCell.xib */; };
+		735DF0F9236753300071238C /* PetDataBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735DF0F8236753300071238C /* PetDataBase.swift */; };
+		735DF0FC236758060071238C /* Pet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735DF0FB236758060071238C /* Pet.swift */; };
+		735DF0FF23675B9C0071238C /* _uicollectionview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735DF0FE23675B9C0071238C /* _uicollectionview.swift */; };
+		735DF10123675D3A0071238C /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735DF10023675D3A0071238C /* DetailsViewController.swift */; };
 		73D7C2E3236734C400171DDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D7C2E2236734C400171DDC /* AppDelegate.swift */; };
 		73D7C2E5236734C400171DDC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D7C2E4236734C400171DDC /* SceneDelegate.swift */; };
 		73D7C2E7236734C400171DDC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D7C2E6236734C400171DDC /* ViewController.swift */; };
 		73D7C2EA236734C400171DDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73D7C2E8236734C400171DDC /* Main.storyboard */; };
-		73D7C2EC236734C500171DDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73D7C2EB236734C500171DDC /* Assets.xcassets */; };
 		73D7C2EF236734C500171DDC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73D7C2ED236734C500171DDC /* LaunchScreen.storyboard */; };
 		73D7C2FA236734C500171DDC /* PetShopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D7C2F9236734C500171DDC /* PetShopTests.swift */; };
 		8C53C9160B8A89572CD0570B /* Pods_PetShopTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC3D9C453BDC4D43D0608089 /* Pods_PetShopTests.framework */; };
@@ -32,12 +42,22 @@
 		12A531B47CBB429CE91B1A2A /* Pods-PetShopTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PetShopTests.release.xcconfig"; path = "Target Support Files/Pods-PetShopTests/Pods-PetShopTests.release.xcconfig"; sourceTree = "<group>"; };
 		1A174269B0BAFBD062077522 /* Pods-PetShop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PetShop.debug.xcconfig"; path = "Target Support Files/Pods-PetShop/Pods-PetShop.debug.xcconfig"; sourceTree = "<group>"; };
 		267AA799B4817BEE67DC56DE /* Pods-PetShop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PetShop.release.xcconfig"; path = "Target Support Files/Pods-PetShop/Pods-PetShop.release.xcconfig"; sourceTree = "<group>"; };
+		735DF0E523673A430071238C /* PetShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetShopViewController.swift; sourceTree = "<group>"; };
+		735DF0E723673AC10071238C /* AddPetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPetViewController.swift; sourceTree = "<group>"; };
+		735DF0E923673ACE0071238C /* GalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
+		735DF0EB23673ADF0071238C /* PetListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetListViewController.swift; sourceTree = "<group>"; };
+		735DF0F023674D360071238C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		735DF0F323674E900071238C /* PetCollectionVIewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetCollectionVIewCell.swift; sourceTree = "<group>"; };
+		735DF0F423674E900071238C /* PetCollectionVIewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PetCollectionVIewCell.xib; sourceTree = "<group>"; };
+		735DF0F8236753300071238C /* PetDataBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetDataBase.swift; sourceTree = "<group>"; };
+		735DF0FB236758060071238C /* Pet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pet.swift; sourceTree = "<group>"; };
+		735DF0FE23675B9C0071238C /* _uicollectionview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _uicollectionview.swift; sourceTree = "<group>"; };
+		735DF10023675D3A0071238C /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		73D7C2DF236734C400171DDC /* PetShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73D7C2E2236734C400171DDC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		73D7C2E4236734C400171DDC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		73D7C2E6236734C400171DDC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		73D7C2E9236734C400171DDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		73D7C2EB236734C500171DDC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		73D7C2EE236734C500171DDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		73D7C2F0236734C500171DDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		73D7C2F5236734C500171DDC /* PetShopTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PetShopTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -77,6 +97,39 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		735DF0F223674E5E0071238C /* PetView */ = {
+			isa = PBXGroup;
+			children = (
+				735DF0F323674E900071238C /* PetCollectionVIewCell.swift */,
+				735DF0F423674E900071238C /* PetCollectionVIewCell.xib */,
+			);
+			path = PetView;
+			sourceTree = "<group>";
+		};
+		735DF0F7236753040071238C /* persistence */ = {
+			isa = PBXGroup;
+			children = (
+				735DF0F8236753300071238C /* PetDataBase.swift */,
+			);
+			path = persistence;
+			sourceTree = "<group>";
+		};
+		735DF0FA236757FC0071238C /* model */ = {
+			isa = PBXGroup;
+			children = (
+				735DF0FB236758060071238C /* Pet.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		735DF0FD23675B740071238C /* extentions */ = {
+			isa = PBXGroup;
+			children = (
+				735DF0FE23675B9C0071238C /* _uicollectionview.swift */,
+			);
+			path = extentions;
+			sourceTree = "<group>";
+		};
 		73D7C2D6236734C400171DDC = {
 			isa = PBXGroup;
 			children = (
@@ -100,12 +153,15 @@
 		73D7C2E1236734C400171DDC /* PetShop */ = {
 			isa = PBXGroup;
 			children = (
-				73D7C2F0236734C500171DDC /* Info.plist */,
+				735DF0FD23675B740071238C /* extentions */,
+				735DF0FA236757FC0071238C /* model */,
+				735DF0F7236753040071238C /* persistence */,
 				73D7C305236735EC00171DDC /* controller */,
 				73D7C304236735E700171DDC /* view */,
 				73D7C2E2236734C400171DDC /* AppDelegate.swift */,
 				73D7C2E4236734C400171DDC /* SceneDelegate.swift */,
-				73D7C2EB236734C500171DDC /* Assets.xcassets */,
+				735DF0F023674D360071238C /* Assets.xcassets */,
+				73D7C2F0236734C500171DDC /* Info.plist */,
 			);
 			path = PetShop;
 			sourceTree = "<group>";
@@ -122,6 +178,7 @@
 		73D7C304236735E700171DDC /* view */ = {
 			isa = PBXGroup;
 			children = (
+				735DF0F223674E5E0071238C /* PetView */,
 				73D7C2E8236734C400171DDC /* Main.storyboard */,
 				73D7C2ED236734C500171DDC /* LaunchScreen.storyboard */,
 			);
@@ -132,6 +189,11 @@
 			isa = PBXGroup;
 			children = (
 				73D7C2E6236734C400171DDC /* ViewController.swift */,
+				735DF0E523673A430071238C /* PetShopViewController.swift */,
+				735DF0E723673AC10071238C /* AddPetViewController.swift */,
+				735DF0E923673ACE0071238C /* GalleryViewController.swift */,
+				735DF0EB23673ADF0071238C /* PetListViewController.swift */,
+				735DF10023675D3A0071238C /* DetailsViewController.swift */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -158,6 +220,7 @@
 				73D7C2DB236734C400171DDC /* Sources */,
 				73D7C2DC236734C400171DDC /* Frameworks */,
 				73D7C2DD236734C400171DDC /* Resources */,
+				25F3D019DC1B01A3CA4DFD74 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -231,7 +294,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				73D7C2EF236734C500171DDC /* LaunchScreen.storyboard in Resources */,
-				73D7C2EC236734C500171DDC /* Assets.xcassets in Resources */,
+				735DF0F123674D360071238C /* Assets.xcassets in Resources */,
+				735DF0F623674E900071238C /* PetCollectionVIewCell.xib in Resources */,
 				73D7C2EA236734C400171DDC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -246,6 +310,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		25F3D019DC1B01A3CA4DFD74 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PetShop/Pods-PetShop-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PetShop/Pods-PetShop-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PetShop/Pods-PetShop-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		C8E9AF4B993DB25E9059DC37 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -297,9 +378,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				735DF0E623673A430071238C /* PetShopViewController.swift in Sources */,
 				73D7C2E7236734C400171DDC /* ViewController.swift in Sources */,
+				735DF0F9236753300071238C /* PetDataBase.swift in Sources */,
+				735DF0FF23675B9C0071238C /* _uicollectionview.swift in Sources */,
+				735DF0E823673AC10071238C /* AddPetViewController.swift in Sources */,
+				735DF0EA23673ACE0071238C /* GalleryViewController.swift in Sources */,
+				735DF0FC236758060071238C /* Pet.swift in Sources */,
 				73D7C2E3236734C400171DDC /* AppDelegate.swift in Sources */,
 				73D7C2E5236734C400171DDC /* SceneDelegate.swift in Sources */,
+				735DF0F523674E900071238C /* PetCollectionVIewCell.swift in Sources */,
+				735DF0EC23673ADF0071238C /* PetListViewController.swift in Sources */,
+				735DF10123675D3A0071238C /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

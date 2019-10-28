@@ -5,6 +5,8 @@ target 'PetShop' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
+  pod 'SQLite.swift', '~> 0.12.0'
+  pod 'SDWebImage', '~> 4.0'
   # Pods for PetShop
 
   target 'PetShopTests' do
