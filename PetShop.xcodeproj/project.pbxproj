@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		23882A70FD0BBE3CB1BA74A2 /* Pods_PetShop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA61F8747212EDFD009C2264 /* Pods_PetShop.framework */; };
 		73D7C2E3236734C400171DDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D7C2E2236734C400171DDC /* AppDelegate.swift */; };
 		73D7C2E5236734C400171DDC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D7C2E4236734C400171DDC /* SceneDelegate.swift */; };
 		73D7C2E7236734C400171DDC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D7C2E6236734C400171DDC /* ViewController.swift */; };
@@ -14,6 +15,7 @@
 		73D7C2EC236734C500171DDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73D7C2EB236734C500171DDC /* Assets.xcassets */; };
 		73D7C2EF236734C500171DDC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73D7C2ED236734C500171DDC /* LaunchScreen.storyboard */; };
 		73D7C2FA236734C500171DDC /* PetShopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D7C2F9236734C500171DDC /* PetShopTests.swift */; };
+		8C53C9160B8A89572CD0570B /* Pods_PetShopTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC3D9C453BDC4D43D0608089 /* Pods_PetShopTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +29,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		12A531B47CBB429CE91B1A2A /* Pods-PetShopTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PetShopTests.release.xcconfig"; path = "Target Support Files/Pods-PetShopTests/Pods-PetShopTests.release.xcconfig"; sourceTree = "<group>"; };
+		1A174269B0BAFBD062077522 /* Pods-PetShop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PetShop.debug.xcconfig"; path = "Target Support Files/Pods-PetShop/Pods-PetShop.debug.xcconfig"; sourceTree = "<group>"; };
+		267AA799B4817BEE67DC56DE /* Pods-PetShop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PetShop.release.xcconfig"; path = "Target Support Files/Pods-PetShop/Pods-PetShop.release.xcconfig"; sourceTree = "<group>"; };
 		73D7C2DF236734C400171DDC /* PetShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73D7C2E2236734C400171DDC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		73D7C2E4236734C400171DDC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -38,6 +43,9 @@
 		73D7C2F5236734C500171DDC /* PetShopTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PetShopTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		73D7C2F9236734C500171DDC /* PetShopTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetShopTests.swift; sourceTree = "<group>"; };
 		73D7C2FB236734C500171DDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6291F4F90C9BD08B51F68DD /* Pods-PetShopTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PetShopTests.debug.xcconfig"; path = "Target Support Files/Pods-PetShopTests/Pods-PetShopTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DA61F8747212EDFD009C2264 /* Pods_PetShop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PetShop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC3D9C453BDC4D43D0608089 /* Pods_PetShopTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PetShopTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23882A70FD0BBE3CB1BA74A2 /* Pods_PetShop.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,18 +61,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C53C9160B8A89572CD0570B /* Pods_PetShopTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		53FF0E1F3F15A6296DECA33C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DA61F8747212EDFD009C2264 /* Pods_PetShop.framework */,
+				FC3D9C453BDC4D43D0608089 /* Pods_PetShopTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		73D7C2D6236734C400171DDC = {
 			isa = PBXGroup;
 			children = (
 				73D7C2E1236734C400171DDC /* PetShop */,
 				73D7C2F8236734C500171DDC /* PetShopTests */,
 				73D7C2E0236734C400171DDC /* Products */,
+				B226437637A77A030A70BB52 /* Pods */,
+				53FF0E1F3F15A6296DECA33C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,13 +100,12 @@
 		73D7C2E1236734C400171DDC /* PetShop */ = {
 			isa = PBXGroup;
 			children = (
+				73D7C2F0236734C500171DDC /* Info.plist */,
+				73D7C305236735EC00171DDC /* controller */,
+				73D7C304236735E700171DDC /* view */,
 				73D7C2E2236734C400171DDC /* AppDelegate.swift */,
 				73D7C2E4236734C400171DDC /* SceneDelegate.swift */,
-				73D7C2E6236734C400171DDC /* ViewController.swift */,
-				73D7C2E8236734C400171DDC /* Main.storyboard */,
 				73D7C2EB236734C500171DDC /* Assets.xcassets */,
-				73D7C2ED236734C500171DDC /* LaunchScreen.storyboard */,
-				73D7C2F0236734C500171DDC /* Info.plist */,
 			);
 			path = PetShop;
 			sourceTree = "<group>";
@@ -99,6 +119,34 @@
 			path = PetShopTests;
 			sourceTree = "<group>";
 		};
+		73D7C304236735E700171DDC /* view */ = {
+			isa = PBXGroup;
+			children = (
+				73D7C2E8236734C400171DDC /* Main.storyboard */,
+				73D7C2ED236734C500171DDC /* LaunchScreen.storyboard */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		73D7C305236735EC00171DDC /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				73D7C2E6236734C400171DDC /* ViewController.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		B226437637A77A030A70BB52 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1A174269B0BAFBD062077522 /* Pods-PetShop.debug.xcconfig */,
+				267AA799B4817BEE67DC56DE /* Pods-PetShop.release.xcconfig */,
+				C6291F4F90C9BD08B51F68DD /* Pods-PetShopTests.debug.xcconfig */,
+				12A531B47CBB429CE91B1A2A /* Pods-PetShopTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,6 +154,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 73D7C2FE236734C500171DDC /* Build configuration list for PBXNativeTarget "PetShop" */;
 			buildPhases = (
+				F0B6E53B83144B700D7D8D6D /* [CP] Check Pods Manifest.lock */,
 				73D7C2DB236734C400171DDC /* Sources */,
 				73D7C2DC236734C400171DDC /* Frameworks */,
 				73D7C2DD236734C400171DDC /* Resources */,
@@ -123,6 +172,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 73D7C301236734C500171DDC /* Build configuration list for PBXNativeTarget "PetShopTests" */;
 			buildPhases = (
+				C8E9AF4B993DB25E9059DC37 /* [CP] Check Pods Manifest.lock */,
 				73D7C2F1236734C500171DDC /* Sources */,
 				73D7C2F2236734C500171DDC /* Frameworks */,
 				73D7C2F3236734C500171DDC /* Resources */,
@@ -194,6 +244,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C8E9AF4B993DB25E9059DC37 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PetShopTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F0B6E53B83144B700D7D8D6D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PetShop-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		73D7C2DB236734C400171DDC /* Sources */ = {
@@ -360,11 +457,13 @@
 		};
 		73D7C2FF236734C500171DDC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A174269B0BAFBD062077522 /* Pods-PetShop.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YLNRMJB2U3;
 				INFOPLIST_FILE = PetShop/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -372,17 +471,19 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.workshop.petshop.PetShop;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		73D7C300236734C500171DDC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 267AA799B4817BEE67DC56DE /* Pods-PetShop.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YLNRMJB2U3;
 				INFOPLIST_FILE = PetShop/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -390,12 +491,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.workshop.petshop.PetShop;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		73D7C302236734C500171DDC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6291F4F90C9BD08B51F68DD /* Pods-PetShopTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -418,6 +520,7 @@
 		};
 		73D7C303236734C500171DDC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12A531B47CBB429CE91B1A2A /* Pods-PetShopTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
