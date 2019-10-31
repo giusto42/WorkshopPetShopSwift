@@ -9,7 +9,7 @@
 import UIKit
 import SkyFloatingLabelTextField
 
-class AddPetViewController: PetShopViewController {
+class AddPetViewController: PetShopViewController, UITextFieldDelegate {
     
     @IBOutlet weak var nameTxt: SkyFloatingLabelTextField!
     @IBOutlet weak var ageTxt: SkyFloatingLabelTextField!
@@ -25,6 +25,19 @@ class AddPetViewController: PetShopViewController {
         super.viewDidLoad()
         addPetButton.roundCorners(corners: .allCorners, radius: 10)
         addLogoToNavBar()
+        self.hideKeyboardWhenTappedAround()
+        
+        nameTxt.delegate = self
+        ageTxt.delegate = self
+        typeTxt.delegate = self
+        detailsTxt.delegate = self
+        priceTxt.delegate = self
+        imageUrlTxt.delegate = self
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
     }
     
     private func areFiledCompleted() -> Bool {
