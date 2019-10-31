@@ -12,7 +12,7 @@ import SDWebImage
 class DetailsViewController: PetShopViewController {
     
     @IBOutlet weak var imageView: UIImageView!
-    @IBOutlet weak var detailLabel: UILabel!
+    @IBOutlet weak var detailTextView: UITextView!
     
     var pet: Pet?
     
@@ -20,22 +20,15 @@ class DetailsViewController: PetShopViewController {
         super.viewDidLoad()
         
         addBackButton()
-        detailLabel.text = pet!.details
+        detailTextView.text = pet!.details
         
-        addTitleToNavBar(title: pet!.name, color: .black)
+        addTitleToNavBar(title: pet!.name, color: #colorLiteral(red: 0.5254901961, green: 0.7137254902, blue: 0.7647058824, alpha: 1))
         imageView.sd_imageTransition = .fade
         imageView.sd_setImage(with: URL(string: pet!.imageUrl))
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
         
-        let path = UIBezierPath(roundedRect:detailLabel.bounds,
-                                byRoundingCorners:[.bottomRight, .bottomLeft],
-                                cornerRadii: CGSize(width: 20, height:  20))
-        let maskLayer = CAShapeLayer()
-        maskLayer.path = path.cgPath
-        detailLabel.layer.mask = maskLayer
+        detailTextView.isEditable = false
+        detailTextView.sizeToFit()
+        detailTextView.layer.cornerRadius = 20
+        detailTextView.textContainerInset = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
     }
-    
 }

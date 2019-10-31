@@ -1,24 +1,63 @@
 PODS:
+  - Alamofire (4.9.1)
+  - RxAlamofire (5.1.0):
+    - RxAlamofire/Core (= 5.1.0)
+  - RxAlamofire/Core (5.1.0):
+    - Alamofire (~> 4.8)
+    - RxSwift (~> 5.0)
+  - RxCocoa (5.0.1):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxRelay (5.0.1):
+    - RxSwift (~> 5)
+  - RxSwift (5.0.1)
   - SDWebImage (4.4.7):
     - SDWebImage/Core (= 4.4.7)
   - SDWebImage/Core (4.4.7)
+  - SkyFloatingLabelTextField (3.7.0)
   - SQLite.swift (0.12.2):
     - SQLite.swift/standard (= 0.12.2)
   - SQLite.swift/standard (0.12.2)
+  - Swinject (2.6.0)
+  - SwinjectStoryboard (2.2.0):
+    - Swinject (~> 2.6)
 
 DEPENDENCIES:
+  - Alamofire
+  - RxAlamofire
+  - RxCocoa
+  - RxSwift
   - SDWebImage (~> 4.0)
+  - SkyFloatingLabelTextField (~> 3.0)
   - SQLite.swift (~> 0.12.0)
+  - Swinject (= 2.6)
+  - SwinjectStoryboard (= 2.2.0)
 
 SPEC REPOS:
   trunk:
+    - Alamofire
+    - RxAlamofire
+    - RxCocoa
+    - RxRelay
+    - RxSwift
     - SDWebImage
+    - SkyFloatingLabelTextField
     - SQLite.swift
+    - Swinject
+    - SwinjectStoryboard
 
 SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  RxAlamofire: a2d7621de4c23a0c6e7b476b504acc32838ee341
+  RxCocoa: e741b9749968e8a143e2b787f1dfbff2b63d0a5c
+  RxRelay: 89d54507f4fd4d969e6ec1d4bd7f3673640b4640
+  RxSwift: e2dc62b366a3adf6a0be44ba9f405efd4c94e0c4
   SDWebImage: c10d14a8883ebd89664f02a422006f66a85c0c5d
+  SkyFloatingLabelTextField: 4b46db0ab1ccde0919cded29c656e6b4805eda04
   SQLite.swift: d2b4642190917051ce6bd1d49aab565fe794eea3
+  Swinject: 48a96cda93633cf2860697b4ce76ab5db9ebaca2
+  SwinjectStoryboard: 32512ef16c2b0ff5b8f823b23539c4a50f6d3383
 
-PODFILE CHECKSUM: bca43b658cffe609e069994f0eeb111ba7f2cdeb
+PODFILE CHECKSUM: d5dcf63116c3a5ef552989cab94ccf94a0b4c5aa
 
 COCOAPODS: 1.8.4

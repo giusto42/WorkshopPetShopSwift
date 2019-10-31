@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwinjectStoryboard
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -14,6 +15,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        SwinjectStoryboard.setup()
+    
+        let appPrefs = SwinjectStoryboard.defaultContainer.resolve(AppPrefs.self)!
+        if appPrefs.isFirstSession() {
+            let dataBase = PetDataBase()
+            dataBase.createTabel()
+            Pet.dummyPets().forEach { pet in
+                dataBase.insertPet(pet: pet)
+            }
+        }
+        
+        appPrefs.incrementSessionCount()
+
         return true
     }
 

@@ -7,6 +7,13 @@ target 'PetShop' do
 
   pod 'SQLite.swift', '~> 0.12.0'
   pod 'SDWebImage', '~> 4.0'
+  pod 'Swinject', '2.6'
+  pod 'SwinjectStoryboard', '2.2.0'
+  pod 'SkyFloatingLabelTextField', '~> 3.0'
+  pod 'Alamofire'
+  pod 'RxAlamofire'
+  pod 'RxSwift'
+  pod 'RxCocoa'
   # Pods for PetShop
 
   target 'PetShopTests' do

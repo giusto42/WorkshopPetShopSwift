@@ -87,7 +87,7 @@ struct Pet: Codable {
                 type: "Cat",
                 details: "American Shorthairs are low-maintenance cats that are generally healthy, easy-going, affectionate with owners and social with strangers.",
                 price: 450,
-                imageUrl: " https://scritch-production.imgix.net/b88a5750-137b-11e9-9aa0-05f277f78f75?w=1200&h=1200&fit=crop"
+                imageUrl: "https://scritch-production.imgix.net/b88a5750-137b-11e9-9aa0-05f277f78f75?w=1200&h=1200&fit=crop"
             ),
             Pet(
                 id: 9,

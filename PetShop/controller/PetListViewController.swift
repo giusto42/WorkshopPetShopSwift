@@ -7,19 +7,21 @@
 //
 
 import UIKit
+import RxSwift
 
 class PetListViewController: PetShopViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     
     @IBOutlet weak var collectionView: UICollectionView!
-    
-    var pets: [Pet] = Pet.dummyPets()
+
+    var pets: [Pet] = []
     var selectedPet: Pet?
+    
+    fileprivate var disposeBag = DisposeBag()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         addLogoToNavBar()
-        
         let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
         layout.scrollDirection = .vertical
         
@@ -28,6 +30,21 @@ class PetListViewController: PetShopViewController, UICollectionViewDataSource, 
         collectionView.delegate = self
         collectionView.backgroundColor = #colorLiteral(red: 0.968627451, green: 0.9725490196, blue: 0.9725490196, alpha: 1)
         collectionView.collectionViewLayout = layout
+        
+        self.dataChangeSubject.subscribe(onNext: { didChanged in
+            print("dataChangeSubject")
+            print(didChanged)
+            if didChanged {
+                self.pets = self.dataBase.getPets()
+                self.collectionView.reloadData()
+            }
+        }).disposed(by: disposeBag)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        pets = dataBase.getPets()
+        collectionView.reloadData()
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

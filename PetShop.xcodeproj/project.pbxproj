@@ -19,6 +19,9 @@
 		735DF0FC236758060071238C /* Pet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735DF0FB236758060071238C /* Pet.swift */; };
 		735DF0FF23675B9C0071238C /* _uicollectionview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735DF0FE23675B9C0071238C /* _uicollectionview.swift */; };
 		735DF10123675D3A0071238C /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735DF10023675D3A0071238C /* DetailsViewController.swift */; };
+		73648714236AC592001D81CE /* AppPrefs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73648713236AC592001D81CE /* AppPrefs.swift */; };
+		73648716236AC8EE001D81CE /* _swinject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73648715236AC8EE001D81CE /* _swinject.swift */; };
+		736DCBCD236B5CBF00FFC577 /* _uiview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736DCBCC236B5CBF00FFC577 /* _uiview.swift */; };
 		73D7C2E3236734C400171DDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D7C2E2236734C400171DDC /* AppDelegate.swift */; };
 		73D7C2E5236734C400171DDC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D7C2E4236734C400171DDC /* SceneDelegate.swift */; };
 		73D7C2E7236734C400171DDC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D7C2E6236734C400171DDC /* ViewController.swift */; };
@@ -53,6 +56,9 @@
 		735DF0FB236758060071238C /* Pet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pet.swift; sourceTree = "<group>"; };
 		735DF0FE23675B9C0071238C /* _uicollectionview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _uicollectionview.swift; sourceTree = "<group>"; };
 		735DF10023675D3A0071238C /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		73648713236AC592001D81CE /* AppPrefs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppPrefs.swift; sourceTree = "<group>"; };
+		73648715236AC8EE001D81CE /* _swinject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _swinject.swift; sourceTree = "<group>"; };
+		736DCBCC236B5CBF00FFC577 /* _uiview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _uiview.swift; sourceTree = "<group>"; };
 		73D7C2DF236734C400171DDC /* PetShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73D7C2E2236734C400171DDC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		73D7C2E4236734C400171DDC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -126,8 +132,18 @@
 			isa = PBXGroup;
 			children = (
 				735DF0FE23675B9C0071238C /* _uicollectionview.swift */,
+				73648715236AC8EE001D81CE /* _swinject.swift */,
+				736DCBCC236B5CBF00FFC577 /* _uiview.swift */,
 			);
 			path = extentions;
+			sourceTree = "<group>";
+		};
+		73648712236AC4F8001D81CE /* business */ = {
+			isa = PBXGroup;
+			children = (
+				73648713236AC592001D81CE /* AppPrefs.swift */,
+			);
+			path = business;
 			sourceTree = "<group>";
 		};
 		73D7C2D6236734C400171DDC = {
@@ -153,6 +169,7 @@
 		73D7C2E1236734C400171DDC /* PetShop */ = {
 			isa = PBXGroup;
 			children = (
+				73648712236AC4F8001D81CE /* business */,
 				735DF0FD23675B740071238C /* extentions */,
 				735DF0FA236757FC0071238C /* model */,
 				735DF0F7236753040071238C /* persistence */,
@@ -384,11 +401,14 @@
 				735DF0FF23675B9C0071238C /* _uicollectionview.swift in Sources */,
 				735DF0E823673AC10071238C /* AddPetViewController.swift in Sources */,
 				735DF0EA23673ACE0071238C /* GalleryViewController.swift in Sources */,
+				736DCBCD236B5CBF00FFC577 /* _uiview.swift in Sources */,
 				735DF0FC236758060071238C /* Pet.swift in Sources */,
 				73D7C2E3236734C400171DDC /* AppDelegate.swift in Sources */,
 				73D7C2E5236734C400171DDC /* SceneDelegate.swift in Sources */,
 				735DF0F523674E900071238C /* PetCollectionVIewCell.swift in Sources */,
 				735DF0EC23673ADF0071238C /* PetListViewController.swift in Sources */,
+				73648714236AC592001D81CE /* AppPrefs.swift in Sources */,
+				73648716236AC8EE001D81CE /* _swinject.swift in Sources */,
 				735DF10123675D3A0071238C /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

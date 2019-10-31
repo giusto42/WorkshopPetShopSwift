@@ -7,8 +7,12 @@
 //
 
 import UIKit
+import RxSwift
 
 class PetShopViewController: UIViewController {
+    
+    lazy var dataBase = PetDataBase()
+    let dataChangeSubject = PublishSubject<Bool>()
     
     lazy var logoView: UIView = {
        let wrapper = UIView(frame: CGRect(x: 0, y: 0, width: 57, height: 28))
@@ -31,15 +35,7 @@ class PetShopViewController: UIViewController {
         button.frame = CGRect(x: 0, y: 0, width: 53, height: 30)
         button.imageEdgeInsets = UIEdgeInsets(top: 1, left: -24, bottom: -1, right: 24)
         button.tintColor = getStatusBarTextColor()
-        
-        let label = UILabel(frame: CGRect(x: 10, y: 5, width: 50, height: 20))
-        label.font = UIFont.systemFont(ofSize: 15)
-        label.text = "Back"
-        label.textAlignment = .center
-        label.textColor = getStatusBarTextColor()
-        label.backgroundColor = .clear
-        button.addSubview(label)
-        
+
         let barButton = UIBarButtonItem(customView: button)
         barButton.tintColor = getStatusBarTextColor()
         self.navigationItem.leftBarButtonItem = barButton
@@ -47,7 +43,7 @@ class PetShopViewController: UIViewController {
     
     func addTitleToNavBar(title: String, color: UIColor) {
         let titleLabel = UILabel(frame: CGRect(x: 0, y: 0, width: 64, height: 21))
-        titleLabel.font = UIFont.systemFont(ofSize: 18)
+        titleLabel.font = UIFont.boldSystemFont(ofSize: 18)
         titleLabel.textAlignment = .center
         titleLabel.textColor = color
         titleLabel.numberOfLines = 1
@@ -58,6 +54,12 @@ class PetShopViewController: UIViewController {
         navigationItem.titleView = titleLabel
     }
     
+    func showAlertPopup(title: String, message: String, actionTitle: String = "Dismiss") {
+        let alertController = UIAlertController(title: title, message:message, preferredStyle: .alert)
+        alertController.addAction(UIAlertAction(title: actionTitle, style: .default))
+        self.present(alertController, animated: true, completion: nil)
+    }
+    
     @objc func onBackPressed(){
            dismiss(animated: true, completion: nil)
        }
@@ -66,7 +68,7 @@ class PetShopViewController: UIViewController {
            if preferredStatusBarStyle == .lightContent {
                return .white
            }else{
-            return .black
+            return #colorLiteral(red: 0.5911557078, green: 0.7628985643, blue: 0.8081037402, alpha: 1)
            }
        }
 }
