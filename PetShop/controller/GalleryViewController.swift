@@ -19,31 +19,34 @@ class GalleryViewController: PetShopViewController {
     
     var pets: [Pet] = []
     var nextIndex: Int = 1
-    var currentIndex: Int = 0
     var prevIndex: Int = -1
+    
+    var viewModel: ViewModel?
+    var dataBase: PetDataBase?
     
     fileprivate var disposeBag = DisposeBag()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         addLogoToNavBar()
-
-        self.dataChangeSubject.subscribe(onNext: { didChanged in
+        pets = dataBase!.getPets()
+        
+        imageView.sd_imageTransition = .fade
+        imageView.sd_setImage(with: URL(string: pets[0].imageUrl))
+        titleLabel.text = pets[0].name
+        
+        viewModel!.dataChangeSubject.subscribe(onNext: { didChanged in
             print("dataChangeSubject")
             print(didChanged)
             if didChanged {
-                self.pets = self.dataBase.getPets()
+                self.pets = self.dataBase!.getPets()
             }
         }).disposed(by: disposeBag)
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        pets = dataBase.getPets()
         
-        imageView.sd_imageTransition = .fade
-        imageView.sd_setImage(with: URL(string: pets[currentIndex].imageUrl))
-        titleLabel.text = pets[currentIndex].name
     }
     
     @IBAction func backwardButtonPressed(_ sender: Any) {
@@ -52,7 +55,6 @@ class GalleryViewController: PetShopViewController {
         imageView.sd_setImage(with: URL(string: pets[prevIndex].imageUrl))
         titleLabel.text = pets[prevIndex].name
         
-        currentIndex = prevIndex
         nextIndex -= 1
         prevIndex -= 1
         if prevIndex == -1 {
@@ -66,7 +68,6 @@ class GalleryViewController: PetShopViewController {
         imageView.sd_setImage(with: URL(string: pets[nextIndex].imageUrl))
         titleLabel.text = pets[nextIndex].name
         
-        currentIndex = nextIndex
         nextIndex += 1
         prevIndex += 1
         if nextIndex == pets.count {

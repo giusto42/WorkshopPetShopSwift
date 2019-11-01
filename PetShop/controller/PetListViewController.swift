@@ -15,6 +15,8 @@ class PetListViewController: PetShopViewController, UICollectionViewDataSource, 
 
     var pets: [Pet] = []
     var selectedPet: Pet?
+    var viewModel: ViewModel?
+    var dataBase: PetDataBase?
     
     fileprivate var disposeBag = DisposeBag()
     
@@ -24,6 +26,7 @@ class PetListViewController: PetShopViewController, UICollectionViewDataSource, 
         addLogoToNavBar()
         let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
         layout.scrollDirection = .vertical
+        self.pets = self.dataBase!.getPets()
         
         collectionView.registerNib(ofType: PetCollectionVIewCell.self)
         collectionView.dataSource = self
@@ -31,20 +34,14 @@ class PetListViewController: PetShopViewController, UICollectionViewDataSource, 
         collectionView.backgroundColor = #colorLiteral(red: 0.968627451, green: 0.9725490196, blue: 0.9725490196, alpha: 1)
         collectionView.collectionViewLayout = layout
         
-        self.dataChangeSubject.subscribe(onNext: { didChanged in
+        viewModel!.dataChangeSubject.subscribe(onNext: { didChanged in
             print("dataChangeSubject")
             print(didChanged)
             if didChanged {
-                self.pets = self.dataBase.getPets()
+                self.pets = self.dataBase!.getPets()
                 self.collectionView.reloadData()
             }
         }).disposed(by: disposeBag)
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        pets = dataBase.getPets()
-        collectionView.reloadData()
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

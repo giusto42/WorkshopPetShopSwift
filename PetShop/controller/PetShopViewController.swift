@@ -10,10 +10,7 @@ import UIKit
 import RxSwift
 
 class PetShopViewController: UIViewController {
-    
-    lazy var dataBase = PetDataBase()
-    let dataChangeSubject = PublishSubject<Bool>()
-    
+
     lazy var logoView: UIView = {
        let wrapper = UIView(frame: CGRect(x: 0, y: 0, width: 57, height: 28))
        let imageView = UIImageView(image: UIImage(named: "logo")!)

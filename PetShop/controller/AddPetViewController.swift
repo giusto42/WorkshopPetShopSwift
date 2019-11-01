@@ -20,6 +20,8 @@ class AddPetViewController: PetShopViewController, UITextFieldDelegate {
     @IBOutlet weak var addPetButton: UIButton!
 
     var pet: Pet?
+    var viewModel: ViewModel?
+    var dataBase: PetDataBase?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -78,12 +80,12 @@ class AddPetViewController: PetShopViewController, UITextFieldDelegate {
     
     @IBAction func addPetButtonPressed(_ sender: Any) {
         if areFiledCompleted() {
-            dataBase.insertPet(pet: pet!)
+            dataBase!.insertPet(pet: pet!)
             clearFileds()
             showSuccessfulPopup()
         } else {
             showErrorPopup()
         }
-        dataChangeSubject.onNext(true)
+        viewModel!.notifyDataHasChanged()
     }
 }

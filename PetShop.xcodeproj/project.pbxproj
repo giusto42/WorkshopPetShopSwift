@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		23882A70FD0BBE3CB1BA74A2 /* Pods_PetShop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA61F8747212EDFD009C2264 /* Pods_PetShop.framework */; };
+		734AC947236C4637008A49EA /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734AC946236C4637008A49EA /* ViewModel.swift */; };
 		735DF0E623673A430071238C /* PetShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735DF0E523673A430071238C /* PetShopViewController.swift */; };
 		735DF0E823673AC10071238C /* AddPetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735DF0E723673AC10071238C /* AddPetViewController.swift */; };
 		735DF0EA23673ACE0071238C /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735DF0E923673ACE0071238C /* GalleryViewController.swift */; };
@@ -25,7 +26,6 @@
 		73B4A69E236B86DA00FD64F3 /* _uiviewcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B4A69D236B86DA00FD64F3 /* _uiviewcontroller.swift */; };
 		73D7C2E3236734C400171DDC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D7C2E2236734C400171DDC /* AppDelegate.swift */; };
 		73D7C2E5236734C400171DDC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D7C2E4236734C400171DDC /* SceneDelegate.swift */; };
-		73D7C2E7236734C400171DDC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D7C2E6236734C400171DDC /* ViewController.swift */; };
 		73D7C2EA236734C400171DDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73D7C2E8236734C400171DDC /* Main.storyboard */; };
 		73D7C2EF236734C500171DDC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73D7C2ED236734C500171DDC /* LaunchScreen.storyboard */; };
 		73D7C2FA236734C500171DDC /* PetShopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73D7C2F9236734C500171DDC /* PetShopTests.swift */; };
@@ -46,6 +46,7 @@
 		12A531B47CBB429CE91B1A2A /* Pods-PetShopTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PetShopTests.release.xcconfig"; path = "Target Support Files/Pods-PetShopTests/Pods-PetShopTests.release.xcconfig"; sourceTree = "<group>"; };
 		1A174269B0BAFBD062077522 /* Pods-PetShop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PetShop.debug.xcconfig"; path = "Target Support Files/Pods-PetShop/Pods-PetShop.debug.xcconfig"; sourceTree = "<group>"; };
 		267AA799B4817BEE67DC56DE /* Pods-PetShop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PetShop.release.xcconfig"; path = "Target Support Files/Pods-PetShop/Pods-PetShop.release.xcconfig"; sourceTree = "<group>"; };
+		734AC946236C4637008A49EA /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		735DF0E523673A430071238C /* PetShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetShopViewController.swift; sourceTree = "<group>"; };
 		735DF0E723673AC10071238C /* AddPetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPetViewController.swift; sourceTree = "<group>"; };
 		735DF0E923673ACE0071238C /* GalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
@@ -64,7 +65,6 @@
 		73D7C2DF236734C400171DDC /* PetShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73D7C2E2236734C400171DDC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		73D7C2E4236734C400171DDC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		73D7C2E6236734C400171DDC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		73D7C2E9236734C400171DDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		73D7C2EE236734C500171DDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		73D7C2F0236734C500171DDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -103,6 +103,14 @@
 				FC3D9C453BDC4D43D0608089 /* Pods_PetShopTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		734AC945236C4620008A49EA /* viewModel */ = {
+			isa = PBXGroup;
+			children = (
+				734AC946236C4637008A49EA /* ViewModel.swift */,
+			);
+			path = viewModel;
 			sourceTree = "<group>";
 		};
 		735DF0F223674E5E0071238C /* PetView */ = {
@@ -172,6 +180,7 @@
 		73D7C2E1236734C400171DDC /* PetShop */ = {
 			isa = PBXGroup;
 			children = (
+				734AC945236C4620008A49EA /* viewModel */,
 				73648712236AC4F8001D81CE /* business */,
 				735DF0FD23675B740071238C /* extentions */,
 				735DF0FA236757FC0071238C /* model */,
@@ -208,7 +217,6 @@
 		73D7C305236735EC00171DDC /* controller */ = {
 			isa = PBXGroup;
 			children = (
-				73D7C2E6236734C400171DDC /* ViewController.swift */,
 				735DF0E523673A430071238C /* PetShopViewController.swift */,
 				735DF0E723673AC10071238C /* AddPetViewController.swift */,
 				735DF0E923673ACE0071238C /* GalleryViewController.swift */,
@@ -399,11 +407,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				735DF0E623673A430071238C /* PetShopViewController.swift in Sources */,
-				73D7C2E7236734C400171DDC /* ViewController.swift in Sources */,
 				735DF0F9236753300071238C /* PetDataBase.swift in Sources */,
 				735DF0FF23675B9C0071238C /* _uicollectionview.swift in Sources */,
 				735DF0E823673AC10071238C /* AddPetViewController.swift in Sources */,
 				735DF0EA23673ACE0071238C /* GalleryViewController.swift in Sources */,
+				734AC947236C4637008A49EA /* ViewModel.swift in Sources */,
 				736DCBCD236B5CBF00FFC577 /* _uiview.swift in Sources */,
 				735DF0FC236758060071238C /* Pet.swift in Sources */,
 				73D7C2E3236734C400171DDC /* AppDelegate.swift in Sources */,
