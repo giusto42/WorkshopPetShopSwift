@@ -12,9 +12,9 @@ import RxSwift
 class PetShopViewController: UIViewController {
 
     lazy var logoView: UIView = {
-       let wrapper = UIView(frame: CGRect(x: 0, y: 0, width: 57, height: 28))
+       let wrapper = UIView(frame: CGRect(x: 0, y: 0, width: 180, height: 90))
        let imageView = UIImageView(image: UIImage(named: "logo")!)
-       imageView.frame = CGRect(x: 0, y: 0, width: 57, height: 28)
+       imageView.frame = CGRect(x: 0, y: 0, width: 180, height: 90)
        imageView.contentMode = .scaleAspectFit
        imageView.tintColor = getStatusBarTextColor()
        wrapper.addSubview(imageView)
